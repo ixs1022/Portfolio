@@ -1,0 +1,287 @@
+*{
+	padding:0;
+	margin:0;
+}
+body{
+	font-family: Verdana;
+}
+
+/* HEADER */
+#header-div{
+	background-color: #c0d6df;
+}
+header{
+	text-align: center;
+	height:15em;
+}
+#title{
+	font-family: 'Molle', cursive;
+	padding-top:1%;
+	font-size: 2.5em;
+	color: #292622;
+}
+#subtitle{
+	font-family:'Merriweather Sans', sans-serif;
+	padding-top: .5%;
+	font-weight: bold;
+	font-size: 1.5em;
+	color: #292622;
+}
+
+/* NAVIGATION */
+
+#navlist{
+	list-style-type: none;
+	width:40%;
+	display:flex;
+	flex-direction: row;
+	align-items:stretch;
+	margin: auto;
+	padding: 4% 0 4% 0;
+}
+.navitem, .active{
+	flex: 1 1 auto;
+	text-align: center;
+	padding: 1% 0 1% 0;
+	font-family:'Merriweather Sans', sans-serif;
+	font-size: 1em;
+}
+a{
+	text-decoration: none;
+	color: #37322D;
+}
+.navitem:hover, .active{
+	text-decoration: underline overline;
+}
+
+/* GENERAL STYLING */
+#content{
+	margin:2% 20%;
+	padding:2%;
+	border:2px solid #37322D;
+}
+
+/* HOME/BLOG SPECIFIC STYLES */
+.blogposts-div{
+	margin:2% 3%;
+	padding:2% 0;
+	display:flex;
+	flex-direction: row;
+	align-items:stretch;
+	flex-wrap: wrap;
+	text-align: center;
+}
+.blog-fig{
+	width:50%;
+	flex: 1 1 auto;
+	height:300px;
+	margin-bottom: 7%;
+	float:left;
+}
+.blog-fig img{
+	padding-bottom: 1%;
+	margin: 2% 0;
+	width:300px;
+}
+figcaption:nth-child(2){
+	font-size: 1em;
+	font-weight: bold;
+}
+figcaption{
+	font-size: .75em;
+	font-weight: normal;
+}
+#blog-img{
+	text-align: center;
+	margin:auto;
+	width:90%;
+	padding: 2% 10%;
+}
+#blog-post-figure{
+	width: 100%;
+	margin:auto;
+}
+#blog-title{
+	text-align: center;
+}
+#blog-date{
+	text-align: right;
+	padding-bottom:2%;
+	margin-right: 10%;
+	font-size: .75em;
+	color:grey;
+}
+/* comments */
+table{
+	width:100%;
+	margin:0 2% 2% 0;
+}
+ th{
+	font-size: 1.3em;
+	font-weight: bold;
+	text-align: left;
+}
+ tr td:first-child{
+	padding-right: 5%;
+}
+tr td{
+	padding-top:2%;
+	padding-bottom: 2%;
+	font-size: .85em;
+}
+th, td{
+	border-bottom: 1px solid #ddd;
+}
+
+/* ABOUT SPECIFIC STYLES */
+#about-fig{
+	margin:0 15% 0 2%;
+	float:right;
+}
+#about-img{
+	//width:173px;
+	height: 260px;
+	float:left;
+	padding-right: 5%;
+	margin:auto;
+}
+#about-img-div{
+	height: 300px;
+}
+
+/* CONTACT SPECIFIC STYLES */
+label, #label{
+	font-size: 75%;
+}
+input[type='text'], input[type='email']{
+	font-size: 1em;
+	margin-bottom: 2%;
+	width:35%;
+}
+textarea{
+	width:75%;
+	font-size:1em;
+}
+input[type='submit']{
+	font-size: 1em;
+	margin-top: 2%;
+}
+
+/* FOOTER */
+footer{
+	width:100%;
+	height:15em;
+	background-color: #c0d6df;
+	text-align: center;
+	font-family:'Merriweather Sans', sans-serif;
+}
+a .social{
+	padding: .5%;
+}
+#footer-div{
+	vertical-align: middle;
+	padding-top: 2%;
+
+}
+
+/* MEDIA QUERIES */
+@media screen and (max-width: 1350px){
+	.blog-fig{
+		width:50%;
+	}
+	.blogposts-div{
+		margin: 2% 10%;
+	}
+	#about-fig{
+		margin-right: 7%;
+		margin-left: 0;
+		font-size: 90%;
+	}
+	#about-img{
+		width: 150px;
+		height:auto;
+	}
+	#about-img-div{
+		height:200px;
+	}
+
+
+}
+@media screen and (max-width: 980px){
+	#navlist{
+		width: 70%;
+		padding:2% 0  2% 0;
+	}
+	header{
+		height: 12em;
+	}
+	.blog-fig{
+		width:100%;
+	}
+	.blogposts-div{
+		margin:5%;
+	}
+	#about-img{
+		width:130px;
+		height: auto;
+		font-size: 85%;
+		
+	}
+	#about-fig{
+		float:left;
+		margin-right: 1%;
+	}
+	#about-img-div{
+		height:300px;
+	}
+
+}
+@media screen and (max-width: 745px){
+	.blogposts-div{
+		margin:2%;
+	}
+	input[type='text'], input[type='email']{
+		width:75%;
+	}
+	.blog-fig{
+		width:100%;
+	}
+
+}
+@media screen and (max-width: 620px){
+	.blog-fig{
+		width:100%;
+	}
+	.blogposts-div{
+		margin:.5%;
+	}
+	input[type='text'], input[type='email']{
+		font-size: .75em;
+		margin-bottom: 2%;
+		width:75%;
+	}
+	textarea, input[type='submit']{
+		font-size: .75em;
+	}
+	label{
+		font-size: .5em;
+	}
+	#about-fig{
+		margin-left: 0;
+	}
+	#blog-title{
+		font-size: .9em;
+	}
+	#content p{
+		font-size: .8em;
+	}
+	#content{
+		margin: 5%;
+	}
+}
+
+a #link{
+	text-decoration: underline;
+	font-weight: bold;
+}
+

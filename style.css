@@ -1,0 +1,311 @@
+*{
+	padding:0;
+	margin:0;
+	font-family: Verdana, Helvetica, Sans-Serif;
+	font-family: 'Neucha', cursive;
+		
+}
+html,body{
+	height:100%;
+	background-color: #d3d3d3;
+	/*background-color: #0c161a;
+	background-image: url("fabric-of-squares.png");*/
+	
+}
+/*** NAVIGATION ***/
+#navbar{
+	width:100%;
+	position:fixed;
+	text-align: right;
+	/*background-color: #d3d3d3;*/
+	background-color: white;
+	opacity: .98;
+	z-index: 100;
+}
+#navbar a{
+	line-height: 3;
+}
+.navitem, .active{
+	text-decoration: none;
+	padding: 0.5% 2%;
+	color:black;
+	font-family: 'Amatic SC', cursive;
+	font-size: 1.5em;
+}
+#contact-item{
+	margin-right: 2%;
+}
+.navitem:hover, .active:hover{
+	border-bottom: 5px solid #D6A8C4;
+}
+.active{
+	border-bottom: 5px solid #D6A8C4;
+}
+#logocon img{
+	padding-top: .5%;
+	margin-bottom: 0;
+	height:2.5em;
+	width:auto;
+	position: absolute;
+	left:2%;
+	top: 15%;
+}
+
+/*** FOOTER ***/
+.footer{
+	margin-top: 15%;
+	width:100%;
+	height:10%;
+	text-align: center;
+	margin-bottom: 2%;
+}
+#link-ul li{
+	display: inline;
+	margin: 1% 0.5%;
+}
+hr{
+	margin-bottom: 1px;
+}
+.copyright{
+	font-size: .75em;
+}
+
+/** HOME **/
+#innercontent{
+	height: 100vh;
+}
+
+/** ABOUT **/
+/* image */
+#ics{
+	border-radius: 5%;
+	margin: 2% 0;
+}
+/* columns */
+#col1{
+	float:left;
+	width:50%;
+	text-align: center;
+	position:relative;
+	height:0;
+	overflow: hidden;
+}
+#col1 iframe{
+	position:absolute;
+	top:0;
+	left:0;
+	width:90%;
+	margin:5%;
+}
+#col2{
+	float:right;
+	width: 46%;
+	margin:2% 2%;
+}
+#about-subtitle{
+	font-family: 'Homemade Apple', cursive;
+	size:200%;
+	text-align: center;
+}
+/** ALL **/
+.container{
+	/*margin-left:12.5%;
+	width:87.5%;*/
+}
+.content{
+	width:75%;
+	margin:auto;
+	/*background: #e8ebef;*/
+	background-color: #d3d3d3;
+	
+}
+.content p{
+	font-size: 1.5em;
+	margin: 0 10%;
+}
+
+/* HOME */
+#landing-title{
+	font-family: 'Homemade Apple', cursive;
+	font-size: 500%;
+	text-align: center;
+	vertical-align: center;
+	padding-top: 15%;
+}
+#sub-title{
+	text-align: center;
+	margin:0 20%;
+	font-size: 2em;
+}
+.title{
+	font-family: 'Homemade Apple', cursive;
+	font-size: 350%;
+	text-align: center;
+	padding-top: 7%;
+}
+#main-imgs{
+	width:75%;
+	margin: auto;
+	text-align: center;
+}
+#main-imgs img{
+	width:175px;
+	height: auto;
+	float:left;
+	border-radius: 60%;
+	margin:2% 4%;
+
+}
+/** CONTACT **/
+form{
+	margin:0 20%;
+}
+.form-col1{
+	width:100%;
+	float:left;
+}
+.form-col2{
+	/*margin-left: 10%;*/
+	width:100%;
+	float:right;
+}
+span{
+	font-size: 1em;
+}
+input, textarea{
+	width:100%;
+	margin-bottom: 2%;
+	border-radius: 2px;
+	font-size: 1.1em;
+}
+input{
+	line-height: 2;
+}
+textarea{
+	height:200px;
+}
+#btn-contain{
+	width:75%;
+	margin:auto;
+}
+input[type='submit']{
+	text-align: center;
+	font-size: 1.2em;
+}
+input[type='submit']:hover{
+	cursor: pointer;
+	background-color: #D6A8C4;
+}
+
+/** SKILLS / PORTFOLIO **/
+h2{
+	font-size: 2em;
+}
+.content .skills-ul{
+	list-style-type: circle;
+}
+#skills-content{
+	width:80%;
+	margin: auto;
+	font-size: 1.5em;
+}
+.skills-ul {
+	margin-left: 10%;
+}
+.date{
+	font-size: .75em;
+}
+.skills-ul#experiences li{
+	margin-bottom: 1em;
+}
+
+/** PORTFOLIO (projects) **/
+#blog-proj{
+	width: 76%;
+	height: 250px;
+	margin:auto;
+	margin-top: 2%;
+	
+}
+.proj-div{
+	width:76%;
+	margin:auto;
+	padding:2% 0;
+	display:flex;
+	flex-direction: row;
+	align-items:stretch;
+	flex-wrap: wrap;
+	text-align: center;
+
+}
+#blog-img{
+	text-align: center;
+	background-color: #c0d6df;
+	border: solid 1px gray;
+	margin: 2%;
+}
+.proj-title{
+	text-align: center;
+}
+.proj-img{
+	border: solid 1px gray;
+	height:250px;
+	width:250px;
+	flex: 1 1 auto;
+	margin:2%;
+	margin-bottom: 30px;
+}
+
+/** MEDIA QUERIES **/
+@media screen and (min-width: 1080px){
+	
+}
+@media screen and (min-width: 850px) and (max-width: 1080px){
+
+}
+@media screen and (max-width: 850px){
+	#col1, #col2{
+		float:none;
+		width: auto;
+	}
+	#ics{
+		width:50%;
+	}
+	#landing-title{
+		font-size: 490%;
+	}
+}
+
+@media screen and (max-width: 725px){
+	#landing-title{
+		font-size: 475%;
+	}
+}
+@media screen and (max-width: 715px){
+	#landing-title{
+		font-size: 450%;
+	}
+}
+@media screen and (max-width: 665px){
+	#landing-title{
+		font-size: 430%;
+	}
+}
+@media screen and (max-width: 640px){
+	#landing-title{
+		font-size: 415%;
+	}
+}
+@media screen and (max-width: 605px){
+	#landing-title{
+		font-size: 375%;
+	}
+}
+@media screen and (max-width: 560px){
+	#landing-title{
+		font-size: 330%;
+	}
+}
+
+
+
